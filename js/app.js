@@ -1,14 +1,26 @@
 /**
-* Author: Ekpoto Liberty Bernard
-* Version: 1.0.2
-* Signature: delino12
-* ALC FX Currency Converter Services Worker
+* Author: Technovole Inc Technologies
+* Version: x
+* Signature: BiltonIQ
+* ALC Currency Converter Service Worker
 */
 
 // register cache name
-var appCacheName = 'alc Currency Converter';
+var appCacheName = 'alcfx-static-v1';
 var appCacheAssets = [
-	
+	'https://delino12.github.io/alcFx/',
+	'https://delino12.github.io/alcFx/css/app.css',
+	'https://delino12.github.io/alcFx/js/app.js',
+	'https://delino12.github.io/alcFx/img/icon.png',
+	'https://delino12.github.io/alcFx/img/logo.png',
+	'https://delino12.github.io/alcFx/manifest.json',
+	'https://fonts.googleapis.com/icon?family=Material+Icons',
+	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
+	'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',
+	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
+	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
+	'https://free.currencyconverterapi.com/api/v5/currencies',
+	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js'
 ];
 
 // on install state
