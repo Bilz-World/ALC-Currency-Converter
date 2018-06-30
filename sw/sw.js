@@ -1,8 +1,8 @@
 /**
-* Author: Ekpoto Liberty Bernard
-* Version: 1.0.2
-* Signature: delino12
-* ALC FX Currency Converter Services Worker
+* Author: Technovole Inc Technologies
+* Version: x
+* Signature: BiltonIQ
+* ALC Service Worker
 */
 
 // register cache name
