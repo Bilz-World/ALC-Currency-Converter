@@ -55,3 +55,5 @@ self.addEventListener('message', function(event){
 		self.skipWaiting();
 	}
 });
+
+console.log('Hello')
