@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+<body  style="background-color: grey;">
+	<div class="col-md-3"><p>Welcome To ALC UltimateFx Currency Converter</p></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary" style="text-align: center; color: red;">ALC Ultimate Fx</h3>
+		<h3 class="text-primary" style="text-align: center; color: red;"></h3>
+		<hr style="border-top:1px dotted #ccc;">
+		<div class="col-md-2"></div>
+		<div class="col-md-12">
+			<h4>Select Currency</h4>
+			<hr style="border-top:1px groovy #ccc;"/>
+			<div class="col-md-6">
+				From
+				<div class="form-group">
+				<select class="form-control" id="converterfrom" style="width:100%;">
+					<option value="Dollar">Dollar</option>
+					<option value="Pound">Pound</option>
+					<option value="Euro">Euro</option>
+					<option value="KES">KES</option>
+					<option value="UGX">UGX</option>
+				</select>
+				
+			</div>
+			</div>
+			<div class="col-md-6">
+				To
+				<div class="form-group">
+				<select class="form-control" id="converterto" style="width:100%;">
+					<option value="Dollar">Dollar</option>
+					<option value="Pound">Pound</option>
+					<option value="Euro">Euro</option>
+					<option value="KES">KES</option>
+					<option value="UGX">UGX</option>
+				</select>
+				
+			</div>
+			</div>
+			<br />
+			<div class="col-md-12">
+			Amount To Convert
+				<input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+			<br /><br />
+		</div>
+			<div class="col-md-12">
+			<div class="form-group">
+				<label>The Exchange Rate is</label>
+				<input type="number" class="form-control" id="value2" disabled="disabled"/>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-3" style="margin: 0px;"><p>Select the currency you would want to convert</p></div>
+</body>
+<script>
+	
+	
+	function Calculate(){
+		x = document.getElementById("value1").value;
+		y = document.getElementById("converterfrom").value;
+		z = document.getElementById("converterto").value;
+		if(x == ""){
+			document.getElementById("value2").value = "";
+		}
+		else{
+			if (y=="Dollar") {
+				switch(z){
+				case "Dollar":
+					document.getElementById("value2").value = x*1.00;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 0.761354;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 0.859154;
+				break;
+				
+				case "KES":
+					document.getElementById("value2").value = x * 100.860;
+				break;
+				
+				case "UGX":
+					document.getElementById("value2").value = x * 3882.56;
+				break;
+			}
+			}
+			else if (y=="Pound") {
+				switch(z){
+				case "Dollar":
+					document.getElementById("value2").value = x * 1.31367;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 1.00;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 1.12814;
+				break;
+				
+				case "KES":
+					document.getElementById("value2").value = x * 132.508;
+				break;
+				
+				case "UGX":
+					document.getElementById("value2").value = x * 5099.91;
+				break;
+			}
+			}
+			else if (y=="Euro") {
+				switch(z){
+				case "Dollar":
+					document.getElementById("value2").value = x * 1.16492;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 0.886590;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 1.00;
+				break;
+				
+				case "KES":
+					document.getElementById("value2").value = x * 117.455;
+				break;
+				
+				case "UGX":
+					document.getElementById("value2").value = x * 4520.86;
+				break;
+			}
+			}
+			else if (y=="KES") {
+				switch(z){
+				case "Dollar":
+					document.getElementById("value2").value = x * 0.00991909;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 0.00754541;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 0.00851084;
+				break;
+				
+				case "KES":
+					document.getElementById("value2").value = x * 1.00;
+				break;
+				
+				case "UGX":
+					document.getElementById("value2").value = x * 38.4922;
+				break;
+			}
+			}
+
+
+			else if (y=="UGX") {
+				switch(z){
+				case "Dollar":
+					document.getElementById("value2").value = x * 0.00991909;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 0.00754541;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 0.00851084;
+				break;
+				
+				case "KES":
+					document.getElementById("value2").value = x * 1.00;
+				break;
+				
+				case "UGX":
+					document.getElementById("value2").value = x * 1.00;
+				break;
+			}
+			}
+			
+		}
+	}
+</script>
+</html>
